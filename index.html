@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IIITR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <!--Overlay-->
+    <div id="overlay">
+        <div id="welcome-message">
+            <div class="welcome-text"><img src="./images/overlay.png" height="100px" width="150px"> <br>Welcome To IIIT
+                Raichur</div>
+        </div>
+    </div>
+
+
+    <!--header section-->
+    <section class="header">
+        <header class="py-3 mb-4 navgn" style="background: linear-gradient(90deg, whitesmoke 10%, transparent 90% );">
+            <div class="container d-flex flex-wrap justify-content-center">
+
+                <!--logo-->
+                <a href="index.html"
+                    class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
+                    <img src="./images/logo-blue-desktop.png" width="300" height="50" fill="currentColor">
+                </a>
+
+                <!--sidebar-->
+                <div id="mySidebar" class="sidebar">
+                    <form class="col-12 col-lg-auto mb-lg-0 mx-2" role="search">
+                        <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                    </form>
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                    <a href="#">Home</a>
+                    <div class="submenu">
+                        <a href="#">About <span class="arrow">▼</span></a>
+                        <ul>
+                            <li><a href="#">About IIIT Raichur</a></li>
+                            <li><a href="#">Administration</a></li>
+                            <li><a href="#">Board of Governors</a></li>
+                            <li><a href="#">Finance Committee</a></li>
+                            <li><a href="#">Senate Members</a></li>
+                            <li><a href="#">Reports</a></li>
+                            <li><a href="#">Campus Services</a></li>
+                            <li><a href="#">How to Reach</a></li>
+                            <li><a href="#">Press Release</a></li>
+                            <li><a href="#">Other Resources</a></li>
+
+                        </ul>
+                    </div>
+                    <a href="#"></a>
+                    <div class="submenu">
+                        <a href="#">Academics <span class="arrow">▼</span></a>
+                        <ul>
+                            <li><a href="#">Admission</a></li>
+                            <li><a href="#">Program</a></li>
+                            <li><a href="#">Curriculum</a></li>
+                            <li><a href="#">Calendars & Timetables</a></li>
+                            <li><a href="#">AIMS</a></li>
+                        </ul>
+                    </div>
+                    <a href="https://students.iiitr.ac.in/events">Events</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div id="main">
+                    <button class="openbtn" onclick="openNav()"> ☰ </button>
+                </div>
+            </div>
+        </header>
+        <div>
+            <video autoplay loop muted plays-inline class="back-video">
+                <source src="./images/campus.mp4" type="video/mp4">
+            </video>
+            <div class="content">
+                <h2>
+                    <a href="" class="typewrite" data-period="2000"
+                        data-type='[ "","Welcome to the...", "One of the leading Institutes of National Importance in India", "Indian Institute of Information Technology Raichur" ]'>
+                        <span class="wrap"></span>
+                    </a>
+                </h2>
+            </div>
+        </div>
+        <div class="scroll-left">
+            <p> Beta version - devloped by Aryan Pratik • Ashish Arya  • Deepak Sharma • Krishu Patel </p>
+        </div>
+
+    </section>
+
+
+    <!--tabs-->
+    <div class="container tabs">
+        <div class="row">
+            <a href="https://students.iiitr.ac.in/"
+                class="custom-link tabn col-lg-4 card my-4 mx-3 rounded-1 shadow-sm">
+                <p>
+                    <img data-icon="students" height="100px" width="50px" class="ui icon icon_image"
+                        src="https://cmsredesign.channeli.in/library/assets/icons/students.svg"
+                        onmouseover="hover(this)" onmouseout="unhover(this)">
+                </p>
+                <div>
+                    <h5 class="fw-normal">Student Affairs</h5>
+                    <p>Student Council Support</p>
+                </div>
+            </a>
+            <a href="https://iiitr.ac.in/faculty" class="custom-link tabn col-lg-4 card my-4 mx-3 rounded-1 shadow-sm">
+                <p>
+                    <img data-icon="students" height="100px" width="50px" class="ui icon icon_image"
+                        src="https://cmsredesign.channeli.in/library/assets/icons/students.svg"
+                        onmouseover="hover(this)" onmouseout="unhover(this)">
+                </p>
+                <div>
+                    <h5 class="fw-normal">Faculty Affairs</h5>
+                    <p>Teaching excellence and innovation</p>
+                </div>
+            </a>
+            <a href="https://aims.iiitr.ac.in/iiitraichur/"
+                class="custom-link tabn col-lg-4 card my-4 mx-3 rounded-1 shadow-sm">
+                <p>
+                    <img data-icon="students" height="100px" width="50px" class="ui icon icon_image"
+                        src="https://cmsredesign.channeli.in/library/assets/icons/students.svg"
+                        onmouseover="hover(this)" onmouseout="unhover(this)">
+                </p>
+                <div>
+                    <h5 class="fw-normal">AIMS Portal</h5>
+                    <p>Streamlined enrollment and registration</p>
+                </div>
+            </a>
+            <a href="" class="custom-link tabn col-lg-4 card my-4 mx-3 rounded-1 shadow-sm">
+                <p>
+                    <img data-icon="students" height="100px" width="50px" class="ui icon icon_image"
+                        src="https://cmsredesign.channeli.in/library/assets/icons/students.svg"
+                        onmouseover="hover(this)" onmouseout="unhover(this)">
+                </p>
+                <div>
+                    <h5 class="fw-normal">Alumni Network</h5>
+                    <p>Staying Connected</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+    <!---News-->
+    <div class="section-head">
+        <h3>IIITR Editorial</h3>
+    </div>
+    <div class="container py-5" id="news-section">
+        <div class="row g-4 scrollable-container">
+            <div class="sub-sections">
+                <button id="scroll-left" class="scroll-button"> ◀ </button>
+                <div class="col sub-section">
+                    <div class="news-card">
+                        <img src="./images/Shri Krishna.jpeg" height="150px" width="100%">
+                        <h3 class="news-title">Bhagvad Gita - A supreme Guide of life</h3>
+                        <p class="news-content">Paragraph of text to explain the news. We'll add.
+                        </p>
+                        <p class="news-info"><span style="color: blue;">COSA elections</span> • 9th October 2023</p>
+                    </div>
+                </div>
+                <div class="col sub-section">
+                    <div class="news-card">
+                        <img src="./images/charan1.jpeg" height="150px" width="100%">
+                        <h3 class="news-title">Light of knowledge</h3>
+                        <p class="news-content">Paragraph of text to explain the news. We'll add.
+                        </p>
+                        <p class="news-info"><span style="color: blue;">Faculty Info</span> • 7th August 2023</p>
+                    </div>
+                </div>
+                <div class="col sub-section">
+                    <div class="news-card">
+                        <img src="./images/shiva.jpeg" height="150px" width="100%">
+                        <h3 class="news-title">I am death the destroyer of the world</h3>
+                        <p class="news-content">Paragraph of text to explain the news. We'll add.
+                        </p>
+                        <p class="news-info"><span style="color: blue;">Campus News</span> • 40th March 2099</p>
+                    </div>
+                </div>
+                <div class="col sub-section">
+                    <div class="news-card">
+                        <img src="./images/girl.jpeg" height="150px" width="100%">
+                        <h3 class="news-title">In a lady, simplicity radiates allurement</h3>
+                        <p class="news-content">Paragraph of text to explain the news. We'll add.
+                        </p>
+                        <p class="news-info"><span style="color: blue;">Placement News</span> • 15th May 2027</p>
+                    </div>
+                </div>
+                <div class="col sub-section">
+                    <div class="news-card last-news-card">
+                        <img src="./images/shri ram.jpeg" height="150px" width="100%">
+                        <h3 class="news-title">Jai Shree Ram</h3>
+                        <p class="news-content">Paragraph of text to explain the news. We'll add.
+                        </p>
+                        <p class="news-info"><span style="color: blue;">Faculty Info</span> • 1st April 2024</p>
+                    </div>
+                </div>
+                <button id="scroll-right" class="scroll-button"> ▶ </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!--events-->
+    <div class="section-head">
+        <h3>Upcoming Events</h3>
+    </div>
+    <div class="event">
+        <div class="cal-section">
+            <div class="calendar">
+                <div class="calendar__head">
+                    <h3 id="current-month-year">November-2023</h3>
+                </div>
+                <div class="calendar__date">
+                    <div class="calendar__number"></div>
+                    <div class="calendar__number"></div>
+                    <div class="calendar__number"></div>
+                    <div class="calendar__number">1</div>
+                    <div class="calendar__number">2</div>
+                    <div class="calendar__number">3</div>
+                    <div class="calendar__number">4</div>
+                    <div class="calendar__number">5</div>
+                    <div class="calendar__number">6</div>
+                    <div class="calendar__number">7</div>
+                    <div class="calendar__number">8</div>
+                    <div class="calendar__number">9</div>
+                    <div class="calendar__number">10</div>
+                    <div class="calendar__number">11</div>
+                    <div class="calendar__number">12</div>
+                    <div class="calendar__number">13</div>
+                    <div class="calendar__number">14</div>
+                    <div class="calendar__number">15</div>
+                    <div class="calendar__number">16</div>
+                    <div class="calendar__number">17</div>
+                    <div class="calendar__number calendar__number--current">18</div>
+                    <div class="calendar__number">19</div>
+                    <div class="calendar__number">20</div>
+                    <div class="calendar__number">21</div>
+                    <div class="calendar__number">22</div>
+                    <div class="calendar__number">23</div>
+                    <div class="calendar__number">24</div>
+                    <div class="calendar__number">25</div>
+                    <div class="calendar__number">26</div>
+                    <div class="calendar__number">27</div>
+                    <div class="calendar__number">28</div>
+                    <div class="calendar__number">29</div>
+                    <div class="calendar__number">30</div>
+                </div>
+                <button class="but" id="prev-month">Previous Month</button>
+                <button class="but" id="next-month">Next Month</button>
+                <button class="but" id="prev-year">Previous Year</button>
+                <button class="but" id="next-year">Next Year</button>
+            </div>
+        </div>
+        <div class="upcome">
+            <div class="event-item">
+                <div class="date">
+                    <div class="ui section-heading">20th</div>
+                    <div class="ui sub-heading">Aug</div>
+                </div>
+                <div class="info">
+                    <div class="ui sub-heading ">
+                        IIIT Raichur to unveil a new era: Introduction of the AI&DS branch
+                    </div>
+                    <div class="ui one-liner-captions ">
+                        Introduction of the AI&DS branch. Witness AI redefining industries and
+                        empowering our visionary students with cutting-edge skills for global impact. From ethics-driven
+                        solutions to industry collaborations, we will nurture talent that challenges boundaries and
+                        sparks
+                        innovation. Join the AI-powered journey today.
+                    </div>
+                </div>
+            </div>
+            <div class="event-item">
+                <div class="date black">
+                    <div class="ui section-heading">14th</div>
+                    <div class="ui sub-heading">Oct</div>
+                </div>
+                <div class="info">
+                    <div class="ui sub-heading ">
+                        COSA Elections 2023-24
+                    </div>
+                    <div class="ui one-liner-captions ">
+                        Elections for selection of the College President and other Secretry posts in the Council of
+                        Student Affairs is going to be held in online mode.
+                    </div>
+                </div>
+            </div>
+            <div class="event-item">
+                <div class="date">
+                    <div class="ui section-heading">1st</div>
+                    <div class="ui sub-heading">Dec</div>
+                </div>
+                <div class="info">
+                    <div class="ui sub-heading ">
+                        IIT Hyderabad will announce the Official handover of the IIIT Raichur
+                    </div>
+                    <div class="ui one-liner-captions ">
+                        Prof B S Murty, Director IITH & Mentor Director, IIITR and Prof Harish Kumar Sardana, New
+                        Director,
+                        IIITR, will exchange the handover document on occasion.
+                        The coordination Team from IIT Hyderabad will also witness the occasion.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Director's corner-->
+    <div class="section-head">
+        <h3>Director's Corner</h3>
+    </div>
+    <div
+        class="dir position-relative mx-5 my-5 text-center text-muted bg-body border border-dashed rounded-5">
+        <div class="cont">
+            <img src="./images/quote.png" height="100px" width="100px">
+            <h1 class="text-body-emphasis">Prof. Harish Kumar Sardana</h1>
+            <p class="col-lg-6 mx-3 mb-4">Welcome to IIIT Raichur! We're dedicated to advancing technology and
+                education, fostering innovation and excellence. Our vibrant campus and world-class faculty are here to
+                empower students and collaborators on their journey to success. Join us in shaping the future of IT and
+                knowledge.
+            </p>
+            <button class="px-5 mb-5 rounded-5" type="button">Know More...</button>
+        </div>
+        <div class="vid-div">
+            <div height="90%">
+                <video controls height="500px" width="500px" class="rounded-5 shadow-sm">
+                    <source src="./images/dvid.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-head">
+        <h3>Social Handle</h3>
+    </div>
+    <div class="elfsight-app-5ed42c07-546c-4298-8dff-cdf5e50b08fc px-5" data-elfsight-app-lazy>
+    </div>
+
+    <!--faq-->
+    <div class="bottom">
+
+        <div class="bottom_left">
+            <div class="section-head">
+                <h3>FAQs</h3>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-question">
+                    <div class="question">
+                        <span class="toggle-button">0</span>
+                        <h5>Can you provide information about campus housing and accommodation options?
+                        </h5>
+                    </div>
+                    <div class="answer">At our college, we offer a variety of housing and accommodation options to cater
+                        to
+                        the
+                        needs of our students. Currently, we have three hostels - one for girls and two for boys.
+                        Additionally,
+                        we are in the process of constructing a new hostel to accommodate even more students. Our
+                        existing
+                        hostels provide comfortable living spaces equipped with essential amenities, including furnished
+                        rooms,
+                        communal areas, laundry facilities, and 24/7 security. The girls' hostel and one of the boys'
+                        hostels
+                        are located within the campus for easy access to academic buildings and other facilities.
+                        The second boys' hostel is situated outside the campus premises, in the Federal School campus.
+                        While
+                        it
+                        is not directly on campus, it offers convenient access to academic resources, and transportation
+                        arrangements are made for students residing there.
+                        <br>
+                        Please check our Housing and Accommodation page for more detailed information about room types,
+                        rules
+                        and regulations, and the application process. Our goal is to provide a safe and welcoming
+                        environment
+                        for all students, whether they are on campus or in our off-campus facilities.
+                    </div>
+                </div>
+                <div class="faq-question">
+                    <div class="question">
+                        <span class="toggle-button">0</span>
+                        <h5>How do I apply for admission to your college?</h5>
+                    </div>
+                    <div class="answer">For our BTech undergraduate programs, admission is based on JEE Main scores. To
+                        get
+                        started, make sure you have appeared for the JEE Main examination. Visit our official website
+                        and
+                        access the online application portal to select your desired BTech program and complete the
+                        application. Alongside personal and academic details, you'll need to submit essential documents,
+                        including your JEE Main scorecards, and pay the application fee as per the fee structure
+                        provided.
+                        The application can be tracked through your application portal, and if selected, you will
+                        receive an
+                        acceptance letter with enrollment instructions.
+                        <br>
+                        For our PhD programs, please refer to the "PhD Admissions" section on our website. Here, you
+                        will
+                        find program-specific details regarding the application process, eligibility criteria, and
+                        required
+                        documents. Note that admission requirements may vary depending on the program and your student
+                        category. For comprehensive and up-to-date information, visit the Admission section on our
+                        website
+                        and don't hesitate to reach out to our Admissions Office for guidance during the application
+                        process. We're here to assist you in pursuing your academic aspirations with us.
+                    </div>
+                </div>
+                <div class="faq-question">
+                    <div class="question">
+                        <span class="toggle-button">0</span>
+                        <h5>What programs and majors do you offer?</h5>
+                    </div>
+                    <div class="answer">We offer a range of academic programs tailored to meet diverse educational
+                        interests. In our BTech (Bachelor of Technology) category, we provide two specialized branches:
+                        Computer Science and Engineering (CSE) and Artificial Intelligence & Data Science (AI & DS).
+                        For doctoral (PhD) candidates, our offerings include three distinct research areas: Computer
+                        Science
+                        and Engineering (CSE), Artificial Intelligence & Machine Learning (AI & ML), and Mathematics and
+                        Computing. These programs provide an opportunity for in-depth research and specialization within
+                        their respective domains.
+                        <br>
+                        If you require further details about specific majors, courses, or program structures, we
+                        encourage
+                        you to explore our official website or contact our academic advisors for comprehensive
+                        information
+                        on available programs and their respective curricula. We're committed to supporting your
+                        academic
+                        journey and helping you find the program that aligns with your educational and career goals.
+                    </div>
+                </div>
+                <div class="faq-question">
+                    <div class="question">
+                        <span class="toggle-button">0</span>
+                        <h5>What is the cost of tuition and are there any financial aid options
+                            available?</h5>
+                    </div>
+                    <div class="answer">Answer 2: It is a long established fact that a reader will be distracted by the
+                        readable
+                        content of a page when looking at its layout.
+                    </div>
+                </div>
+                <div class="faq-question">
+                    <div class="question">
+                        <span class="toggle-button">0</span>
+                        <h5>What is the cost of tuition and are there any financial aid options
+                            available?</h5>
+                    </div>
+                    <div class="answer">Answer 2: It is a long established fact that a reader will be distracted by the
+                        readable
+                        content of a page when looking at its layout.
+                    </div>
+                </div>
+            </div>
+            <button class="feedback-button">Any more questions...</button>
+        </div>
+
+        <div class="bottom_right">
+            <div class="section-head">
+                <h3>About</h3>
+            </div>
+            <div
+                class="numc position-relative px-1 py-5 my-5 mx-5 text-center border border-dashed rounded-3 shadow-sm">
+                <div class="numbers-section my-3">
+                    <div class="number-box">
+                        <div class="number" data-count="10">0</div>
+                        <div class="label">Faculties</div>
+                    </div>
+                    <div class="number-box my-3">
+                        <div class="number" data-count="200">0</div>
+                        <div class="label">Students</div>
+                    </div>
+                    <div class="number-box my-3">
+                        <div class="number" data-count="7">0</div>
+                        <div class="label">Staff</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--footer-->
+    <div class="foot">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5  border-top">
+            <div class="col mb-3">
+                <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                    <img src="./images/footer.png" width="400" class="mx-5 my">
+                    <svg class="bi me-2" width="40" height="32">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <p class="text-body-secondary">© 2023</p>
+            </div>
+
+            <div class="col mb-3">
+
+            </div>
+
+            <div class="col mb-3">
+                <h5>Campus Services</h5>
+                <div class="flex-column"></div>
+                <div class=" mb-2"><a href="#" class="nav-link p-0 text-body-primary">Library</a></div>
+                <div class="mb-2"><a href="#" class="nav-link p-0 text-body-primary">Sports</a></div>
+                <div class=" mb-2"><a href="#" class="nav-link p-0 text-body-primary">Accommodation</a></div>
+                <div class=" mb-2"><a href="#" class="nav-link p-0 text-body-primary">Getting Here</a></div>
+                <div class=" mb-2"><a href="#" class="nav-link p-0 text-body-primary">Students</a></div>
+                <div class="mb-2"><a href="#" class="nav-link p-0 ">Contact Us</a></div>
+                <div class="mb-2"><a href="#" class="nav-link p-0 text-body-primary">PR Team</a></li>
+                </div>
+            </div>
+
+            <div class="col mb-3">
+                <h5>Academics</h5>
+                <div class="flex-column"></div>
+                <div class=" mb-2"><a href="https://aims.iiitr.ac.in/iiitraichur/" class="nav-link p-0 text-body-primary">AIMS</a></div>
+                <div class="mb-2"><a href="#" class="nav-link p-0 text-body-primary">Academic Calendar</a></div>
+                <div class=" mb-2"><a href="#" class="nav-link p-0 text-body-primary">Admission</a></div>
+                <div class=" mb-2"><a href="#" class="nav-link p-0 text-body-primary">Curriculum</a></div>
+            </div>
+
+            <div class="col mb-3">
+                <h5>Quick Links</h5>
+                <div class="flex-column"></div>
+                <div class="nav-item mb-2"><a href="https://iiitr.ac.in/rti" class="nav-link p-0 text-body-primary">RTI</a></div>
+                <div class="nav-item mb-2"><a href="https://iiitr.ac.in/tenders" class="nav-link p-0 text-body-primary">Tender
+                        Invitation</a>
+                </div>
+                <div class="nav-item mb-2"><a href="https://iiitr.ac.in/admission/fee-structure" class="nav-link p-0 text-body-primary">Fee Structure</a>
+                </div>
+                <div class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-primary">Faculty
+                        Recruitment</a>
+                </div>
+                <div class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-primary">Scholarships &
+                        Educational
+                        Loan</a></div>
+                <div class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-primary">Sitemap</a></div>
+            </div>
+        </footer>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave">
+            <path fill="#352F44" fill-opacity="1" d="M0,96L40,112C80,128,160,160,240,154.7C320,149,400,107,480,106.7C560,107,640,149,720,165.3C800,181,880,171,960,138.7C1040,107,1120,53,1200,53.3C1280,53,1360,107,1400,133.3L1440,160L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+        </svg>
+    </div>
+
+
+    <!--javascript code-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200";
+        }
+
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+    <script src="script.js"></script>
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+
+
+</body>
+
+</html>
