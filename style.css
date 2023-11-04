@@ -1133,34 +1133,35 @@ video {
 /*footer*/
 .foot {
     position: relative;
-    z-index: 1;
-    background: linear-gradient(300deg, #352F44, #26577C, #526D82);
-    background-color: white;
-    animation: gradient-animation 1s ease infinite;
-    color: white;
+    z-index: 1; /* Set z-index to bring the content on top */
+    color: whitesmoke;
+    height: fit-content;
     margin-top: 50px;
     overflow: hidden;
-}
-
-.foot li {
-    color: white;
 }
 
 .wave {
     position: absolute;
     bottom: 0;
     left: 0;
+    z-index: -1;
     width: 100%;
     height: auto;
-    z-index: -1;
-    animation: wave-animation 2s linear infinite alternate;
+    animation: wave-animation 10s linear infinite alternate;
+}
+
+.content-container {
+    position: relative; 
+    z-index: 1;
+    background: transparent;
 }
 
 @keyframes wave-animation {
     0% {
-        transform: translateY(0);
+        transform: translateY(10px);
     }
     100% {
-        transform: translateY(-10px);
+        transform: translateY(0);
     }
 }
+
